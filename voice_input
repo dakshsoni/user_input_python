@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import os
+
+user_input=raw_input("please enter a number: ")
+message_voice ='echo please wait your answer will be displayed soon | festival --tts'
+os.system(message_voice)
+voice ='echo processing | festival --tts'
+os.system(voice)
+#time.sleep('2')
+sum=int(user_input)+100
+print sum
+voice_output='echo '+ str(sum) +'| festival --tts'
+os.system(voice_output)
+
