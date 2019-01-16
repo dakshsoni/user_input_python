@@ -1,6 +1,0 @@
-#!/usr/bin/env python
-
-import ctypes
-a=10
-address=id(a)
-ctypes.cast(address,ctypes.py_object).value
